@@ -69,7 +69,24 @@ SELECT SUM(ProductPrice * Quantity) FROM Orders WHERE PersonID IS 2;
 
 /*__________________________________________________________________________________________________________________*/
 
+INSERT INTO Artist ( Name ) VALUES ('Jhony' ),
+('James'),
+('Bob');
 
+
+SELECT * FROM Artist ORDER BY Name DESC LIMIT 10;
+
+
+SELECT * FROM Artist ORDER BY Name ASC LIMIT 5;
+
+
+ SELECT * FROM Artist WHERE Name LIKE 'Black%';
+
+
+   SELECT * FROM Artist WHERE Name LIKE '%Black%';
+
+
+/*__________________________________________________________________________________________________________________*/
 
 
 
