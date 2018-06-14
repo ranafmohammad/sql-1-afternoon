@@ -88,5 +88,19 @@ SELECT * FROM Artist ORDER BY Name ASC LIMIT 5;
 
 /*__________________________________________________________________________________________________________________*/
 
+SELECT FirstName, LastName FROM Employee WHERE City = "Calgary";
 
 
+SELECT FirstName, LastName, Max(BirthDate) FROM Employee;
+
+
+SELECT FirstName, LastName, Min(BirthDate) FROM Employee;
+
+
+SELECT * FROM Employee WHERE ReportsTo = 2;
+
+
+SELECT COUNT(*) FROM Employee WHERE City = "Lethbridge";
+
+
+/*__________________________________________________________________________________________________________________*/
