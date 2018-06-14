@@ -45,4 +45,31 @@ SELECT * FROM Person WHERE FavoriteColor IN ( "Orange", "Green", "Blue" );
 SELECT * FROM Person WHERE FavoriteColor IN ( "yellow", "purple" );
 
 
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+CREATE TABLE Orders (PersonID integer, ProductName, ProductPrice float, Quantity integer);
+
+
+INSERT INTO Orders ( PersonID, ProductName, ProductPrice, Quantity) VALUES (1, "Shoes", 100, 3),
+(2, "Shirts", 20, 10);
+
+
+SELECT * FROM Orders
+
+
+SELECT SUM(Quantity) FROM Orders;
+
+
+SELECT SUM(ProductPrice * Quantity) FROM Orders;
+
+
+SELECT SUM(ProductPrice * Quantity) FROM Orders WHERE PersonID IS 2;
+
+
+/*__________________________________________________________________________________________________________________*/
+
+
+
+
 
